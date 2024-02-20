@@ -1,0 +1,37 @@
+main {
+    background-color: #bdaa99;
+}
+
+.wrapper-about {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+footer {
+    padding-block: 2.5em;
+}
+
+@media (max-width:889px) {
+    nav {
+        padding-inline: 8em;
+    }
+}
+
+@media (max-width:783px) {
+    .wrapper-about {
+        flex-direction: column;
+    }
+
+    .title-about {
+        text-align: center;
+    }
+
+    .about-info {
+        text-align: center;
+    }
+
+}

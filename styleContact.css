@@ -1,0 +1,32 @@
+main {
+    background-color: var(--bg-brown);
+    min-height: 100vh;
+}
+
+.contact {
+    margin-block-start: 2.5em;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-transform: capitalize;
+    color: #fff200;
+}
+
+.wrapper-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    padding-block: 1.3em;
+    padding-inline: 4em;
+    border-radius: 1.3rem;
+    margin-bottom: 2em;
+}
+
+.contact-info,
+.contact {
+    text-align: center;
+}

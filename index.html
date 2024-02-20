@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TR Bumm</title>
+    <link
+      class="favicon"
+      rel="icon"
+      href="./img/favicon-32x32.png"
+      alt="the company logo"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <img
+      class="exit-ham none"
+      aria-label="the letter X"
+      src="./img/x-symbol-svgrepo-com.svg"
+      tabindex="0"
+      alt="a letter X used to exit the hamburger menu"
+    />
+    <img
+      aria-label="hamburger-menu"
+      src="./img/ham-menu.svg"
+      alt="a hamburger menu"
+      tabindex="0"
+      class="ham show"
+    />
+    <nav class="hide">
+      <a href="#" class="logo">tr bumm</a>
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-item">početna</a></li>
+        <li><a href="about.html" class="nav-item">o nama</a></li>
+        <li><a href="contact.html" class="nav-item">kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="swiper">
+          <button class="prev"></button>
+          <button class="next"></button>
+          <div class="swiper-wrapper">
+            <img
+              src="./img/viber_image_2024-02-14_19-21-41-115.jpg"
+              alt="a table with some food and drinks"
+              class="swiper-slide"
+            />
+            <img
+              src="./img/viber_image_2024-02-14_19-33-00-770.jpg"
+              alt="two people smiling one a teen and the other a man in his forties"
+              class="swiper-slide"
+            />
+            <img
+              src="./img/viber_image_2024-02-14_19-28-56-141.jpg"
+              alt="a preety fruit and vegetables showcase"
+              class="swiper-slide"
+            />
+            <img
+              src="./img/viber_image_2024-02-14_19-36-35-654.jpg"
+              alt="two people smiling in the shop"
+              class="swiper-slide"
+            />
+          </div>
+        </div>
+        <h1 class="title">kod nas je uvijek neka akcija</h1>
+      </section>
+      <section class="intersection">
+        <p class="inter">šta nudimo</p>
+      </section>
+      <section class="value-prep">
+        <article class="value">
+          <div class="flex">
+            <img
+              src="./img/viber_image_2024-02-14_19-21-41-115.jpg"
+              alt="a table with a few drinks and some meat"
+            />
+            <div class="text-right">
+              <h1 class="value-head">Voće i povrće</h1>
+              <p class="info">
+                kvalitet je uvijek na prvom mjestu! svako jutro u 6:00 nam stiže
+                friška i svježa roba, prodajemo samo kvalitetno jer želimo da
+                vidimo osmijeh na licima naših kupaca. tokom cijele godine u
+                ponudi imamo razno voće i povrće a i često imamo specijalne
+                vikend ponude, zato dođite u bumm
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="value">
+          <div class="flex">
+            <img
+              src="./img/joel-mott-IFPuwHGkDTw-unsplash.jpg"
+              alt="a man buying groceries in a shop"
+            />
+            <div class="text-right">
+              <h1 class="value-head">Prehrana</h1>
+              <p class="info">
+                Naša trgovina nudi bogati asortiman različitih proizvoda od
+                mnogih dobavljača.Želja nam je da kupac uspije da pronađe sve
+                što mu treba na jednom mjestu, ukoliko imate nekih problema naši
+                uposlenici su tu da vam pomognu
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="value">
+          <div class="flex">
+            <img
+              src="./img/viber_image_2024-02-14_19-36-35-654.jpg"
+              alt="two boys smilling"
+            />
+            <div class="text-right">
+              <h1 class="value-head">Tradicija</h1>
+              <p class="info">
+                ovo za nas nije samo biznis već način života, zahvalni smo što
+                imamo priliku da se ovim bavimo pa tako svake nove godine
+                pravimo mini party ispred trgovine, da obilježimo početak nove
+                godine i počastimo naše kupce
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="map">
+        <h1 class="map-head">gdje smo na mapi?</h1>
+        <div class="map-flex">
+          <div id="map" style="width: 400px; height: 300px"></div>
+          <article class="location-info">
+            <p class="info">
+              trgovina bumm se nalazi na mostarskom raskrsću, ne možete je
+              promašiti ako krenete prema autoputu. Naša trgovina je najdraže
+              mjesto za mali odmor od dugog puta.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="rights">©made by devtare</p>
+      <p class="rigts">all rights reserved</p>
+    </footer>
+  </body>
+</html>
